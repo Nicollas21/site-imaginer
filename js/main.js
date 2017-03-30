@@ -181,10 +181,10 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-	    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+	    var myLatLng = new google.maps.LatLng(-8.1975633, -34.9263409);
 
 	    var mapOptions = {
-	        zoom: 15,
+	        zoom: 16,
 	        center: myLatLng,
 	        disableDefaultUI: true,
 	        scrollwheel: false,
@@ -253,7 +253,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.402789, 91.822156),
+        position: new google.maps.LatLng(-8.1975633, -34.9263409),
         map: map,
 		icon: 'img/icons/map-marker.png',
     });

@@ -10,6 +10,16 @@
 *
 */
 
+
+/**
+            ADDED STYLES
+*/
+
+.header-logo {
+    width: 50%;
+}
+
+
 /* =================================== */
 /*	Basic Style 
 /* =================================== */
@@ -289,11 +299,8 @@ main > section {
 }
 
 h1.navbar-brand {
-    color: #fff
-    font-size: 20px;
-    font-weight: 700;
     margin: 0;
-    text-transform: uppercase;
+    padding: 0;
 }
 
 .navbar-inverse .navbar-nav > li > a {
