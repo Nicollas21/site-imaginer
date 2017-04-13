@@ -155,13 +155,14 @@
 }
 
 .bg-img-1 {
-	background-image: url(../img/slider/banner.jpg);
+	background-image: url(../img/slider/slide-imaginer.png);
+	width: 100%;
 }
 .bg-img-2 {
-	background-image: url(../img/slider/affinity.jpeg);
+	background-image: url(../img/slider/slide-empoderagua.png);
 }
 .bg-img-3 {
-	background-image: url(../img/slider/cinelli.jpeg);
+	background-image: url(../img/slider/slide-vila-numeros.png);
 }
 
 

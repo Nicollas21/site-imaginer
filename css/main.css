@@ -15,9 +15,78 @@
             ADDED STYLES
 */
 
+
 .header-logo {
-    width: 50%;
+    width: 60%;
 }
+
+#logo-imaginer-albino {
+    width: 33%;
+    margin-bottom: 5px;
+}
+
+#assine-news {
+    margin-bottom: 0;
+}
+
+/*
+==========================
+AREA FOR SLIDES CSS
+==========================
+*/
+
+@media (max-width: 820px){
+
+    .imaginer-slide-element-1{
+        bottom: 1%;
+        right: 2%;
+    }
+
+    .imaginer-slide-element-2 {
+        position: static;
+        height: 10%;    
+    }
+}
+
+.imaginer-slide-element-1 {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+   
+}
+
+.imaginer-slide-element-2 {
+    position: static;
+    height: 50%;    
+}
+
+.blur {
+    -webkit-filter: blur(6px);
+	-moz-filter: blur(6px);
+	-o-filter: blur(6px);
+	-ms-filter: blur(6px);
+	filter: blur(6px);
+}
+
+.bg-colorlayer-1 {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/*
+==========================
+/ AREA FOR SLIDES CSS
+==========================
+*/
+
+/*Overwrite from Bootstrap style */
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #009EE3;
+}
+
 
 
 /* =================================== */
@@ -289,7 +358,7 @@ main > section {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color: rgba(72,145,196,.7);
+    background-color: rgba(255,255,255,.8);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 5px 0;
 }
@@ -304,7 +373,7 @@ h1.navbar-brand {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     text-transform: uppercase;
 }
