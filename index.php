@@ -435,7 +435,7 @@
 					
 					
 					<div class="col-md-7 contact-form wow animated fadeInLeft">
-						<form action="#" method="post">
+						<form id='contact-form' action="ajax/ajax-contact.php" method="POST">
 							<div class="input-field">
 								<input type="text" name="name" class="form-control" placeholder="Your Name...">
 							</div>
@@ -528,17 +528,42 @@
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
 
+        <?php require 'page-scripts.php'; ?>
+
 		<script>
-			//Jquery Animate.css delayer
-			$('.first').addClass('animated');
+			
+			$(document).ready(function(){
 
-			setTimeout(function (){
-				$('.second').show().addClass('animated');
-			}, 1200);
+				$('#contact-form').submit(function(event){
 
-			setTimeout(function (){
-				$('.third').show().addClass('animated');
-			}, 2400);
+					let formData = {
+						'name'		: 	$('input[name=name]').val(),
+						'email'		: 	$('input[name=email]').val(),
+						'subject'	: 	$('input[name=subject]').val(),
+						'message'	: 	$('textarea[name=message]').val()
+					};
+
+					// var formData = $('#contact-form').serialize();
+					// $('#contact-form :input').prop("disabled", false);
+					console.log(formData);
+					ajaxPOSTRequest({
+						url: 'ajax/ajax-contact.php',
+						data: formData,
+						success: function(response) {
+							// $('#contact-form :input').prop("disabled", false);
+							console.log(response);
+						},
+						error: function(msg){
+							alert(msg);
+						}
+					});
+
+					event.preventDefault();
+
+				})
+
+			});
+
 		</script>
     </body>
 </html>

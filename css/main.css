@@ -15,7 +15,6 @@
             ADDED STYLES
 */
 
-
 .header-logo {
     width: 60%;
 }
@@ -1209,18 +1208,18 @@ textarea.form-control {
 
 /*Placeholder Colors*/
 .form-control::-webkit-input-placeholder {
-color:#fff;
+color:#D1D1D1;
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
-color:#fff;
+color:#D1D1D1;
 }
  
 .form-control::-moz-placeholder { /* Firefox 19+ */
-color:#fff;
+color:#D1D1D1;
 }
  
 .form-control:-ms-input-placeholder {
-color:#fff;
+color:#D1D1D1;
 }
 
 
