@@ -15,6 +15,26 @@
             ADDED STYLES
 */
 
+#imaginer-animated-section {
+    padding: 0px;
+    height: 500px;
+}
+
+#logo-animated {
+    padding-left: 40%;
+    width:60%;
+
+}
+
+.first-anim, .second-anim, .third-anim {
+    display: none;
+}
+
+.logo-title {
+    font-size: 2em;
+    padding-left: 40%;
+}
+
 .header-logo {
     width: 60%;
 }

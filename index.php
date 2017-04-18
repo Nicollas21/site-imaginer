@@ -96,12 +96,25 @@
         ==================================== -->
 		
 		<main class="site-content" role="main">
+
+		<section id="imaginer-animated-section">
+			<div style="padding-bottom:20px" class=" first-anim logo-title fadeInDown">
+				<p>Ideias que voam</p>
+			</div>
+			<div class="second-anim fadeInRightBig">
+				<img id="logo-animated" src="img/elefanto.gif">
+			</div>
+			
+			<div style="padding-left:35%; padding-top:20px" class="third-anim logo-title fadeInUp">
+				<p>com peso de um Elefante</p>
+			</div>
+		</section>
 		
         <!--
         Home Slider
         ==================================== -->
 		
-		<section id="home-slider">
+		<!-- <section id="home-slider">
             <div id="slider" class="sl-slider-wrapper">
 
 				<div class="sl-slider">
@@ -139,15 +152,14 @@
 
 					</div>
 
-				</div><!-- /sl-slider -->
-
+				</div>
                 <!-- 
                 <nav id="nav-arrows" class="nav-arrows">
                     <span class="nav-arrow-prev">Previous</span>
                     <span class="nav-arrow-next">Next</span>
                 </nav>
                 -->
-                
+                <!--
                 <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
                     <a href="javascript:;" class="sl-prev">
                         <i class="fa fa-angle-left fa-3x"></i>
@@ -164,8 +176,8 @@
 					<span></span>
 				</nav>
 
-			</div><!-- /slider-wrapper -->
-		</section>
+			</div>
+		</section> -->
 			
 		
 		<!-- Service section -->
@@ -534,6 +546,11 @@
 			
 			$(document).ready(function(){
 
+				// Include Logo Animated
+				$('#logo-animated').load('img/logo-animated/Untitled-1.html');
+
+
+				// Contact Form Ajax
 				$('#contact-form').submit(function(event){
 
 					let formData = {
@@ -560,7 +577,36 @@
 
 					event.preventDefault();
 
-				})
+				});
+
+				// ANimate CSS delay
+
+				function animateCssDelay() {
+
+					setTimeout(function(){
+						$('.first-anim').show().addClass('animated');	
+					}, 1000);
+					
+
+					setTimeout(function() {
+						$('.second-anim').show().addClass('animated');
+					}, 2000);
+
+					setTimeout(function() {
+						$('.third-anim').show().addClass('animated');
+					}, 3000);
+				}
+
+				function animateImaginerLogo(){
+					$('#imaginer-animated-section').css({
+						"padding-top": "110px"
+					});
+
+					animateCssDelay();
+				}
+
+
+				animateImaginerLogo();
 
 			});
 
