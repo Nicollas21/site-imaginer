@@ -15,9 +15,23 @@
             ADDED STYLES
 */
 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #afafaf;
+}
+
 #imaginer-animated-section {
     padding: 0px;
-    height: 500px;
+    height: 600px;
+}
+
+#title-1 {
+    padding-left: 40%;
+}
+
+#title-2 {
+    padding-left:35%;
+    padding-top:20px;
+    padding-bottom:50px;
 }
 
 #logo-animated {
@@ -32,7 +46,6 @@
 
 .logo-title {
     font-size: 2em;
-    padding-left: 40%;
 }
 
 .header-logo {
@@ -46,6 +59,26 @@
 
 #assine-news {
     margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    #imaginer-animated-section {
+        height: auto;
+    }
+
+    #title-1{
+        padding-left: 35%;
+    }
+
+    #title-2 {
+        padding-left: 25%;    
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        width: 200px;
+    }
 }
 
 /*
@@ -1351,7 +1384,7 @@ color:#D1D1D1;
 
 /*navigation*/
     .navbar-inverse .navbar-toggle {
-        border-color: #fff;
+        border-color: #afafaf;
     }
 
     .navbar-inverse .navbar-toggle:hover,

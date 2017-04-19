@@ -98,16 +98,19 @@
 		<main class="site-content" role="main">
 
 		<section id="imaginer-animated-section">
-			<div style="padding-bottom:20px" class=" first-anim logo-title fadeInDown">
+			<div class="top-anim">
+				<div id="title-1" style="padding-bottom:20px" class=" first-anim logo-title fadeInDown">
 				<p>Ideias que voam</p>
-			</div>
-			<div class="second-anim fadeInRightBig">
-				<img id="logo-animated" src="img/elefanto.gif">
+				</div>
+				<div class="second-anim fadeInRightBig">
+					<img id="logo-animated" src="img/elefanto.gif">
+				</div>
+				
+				<div id="title-2" class="third-anim logo-title fadeInUp">
+					<p>com peso de um Elefante</p>
+				</div>
 			</div>
 			
-			<div style="padding-left:35%; padding-top:20px" class="third-anim logo-title fadeInUp">
-				<p>com peso de um Elefante</p>
-			</div>
 		</section>
 		
         <!--
