@@ -117,15 +117,15 @@
 		<section id="imaginer-animated-section">
 			<div class="container">
 				<div class="row">
-					<div class="title text-center col-4 col-offset-3 first-anim fadeIn">
+					<div class="wow title text-center col-4 col-offset-3 fadeIn" data-wow-delay="1.0s">
 						Ideias que voam
 					</div>
 					
 				</div>
 				<div id="svg-animated" class="row">
-					<div id="Stage" class="col-4 col-offset-3 EDGE-84293897 second-anim fadeIn"></div>
+					<div id="Stage" class="wow col-4 col-offset-3 EDGE-84293897 fadeIn" data-wow-delay="2.0s"></div>
 				</div>
-				<div class="title text-center col-4 col-offset-3 third-anim fadeIn">
+				<div class="wow title text-center col-4 col-offset-3 fadeIn" data-wow-delay="3.0s">
 					com peso de um Elefante
 				</div>
 				
@@ -327,14 +327,14 @@
 								<img src="images/membros/lucas-arruda.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>João Lucas </br>(Desenvolvedor Games/Web)</span>
-									<p>Lucas, vulgo Giga, é graduando em Sistemas de Informação pela UFRPE- PE. Seus fones de ouvidos são a porta de entrada para a Matrix, para começar a programar, basta ele coloca-los para conectar-se ao mundo virtal dos códigos.</p>
+									<p>Lucas, vulgo Giga, é graduando em Sistemas de Informação pela UFRPE. Seus fones de ouvidos são a porta de entrada para a Matrix, para começar a programar, basta ele coloca-los para conectar-se ao mundo virtal dos códigos.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
 								<img src="images/membros/nicolas.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>Nicollas Freitas </br>(CEO & Desenvolvedor Mobile)</span>
-									<p>Nicollas é graduando em Sistemas de Informação pela UFRPE- PE, e CEO da Imaginer. Como bom braço direito do chefe Imaginer, Nicollas busca extrair o melhor da equipe, até mesmo a primeira xícara de café da bandeja.</p>
+									<p>Nicollas é graduando em Sistemas de Informação pela UFRPE, e CEO da Imaginer. Como bom braço direito do chefe Imaginer, Nicollas busca extrair o melhor da equipe, até mesmo a primeira xícara de café da bandeja.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
@@ -525,7 +525,7 @@
 						</form>
 						<div class="footer-social">
 							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+								<li class="wow animated zoomIn"><a href="https://www.facebook.com/imaginer.studios/"><i class="fa fa-facebook fa-3x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-3x"></i></a></li>
 								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-3x"></i></a></li>
@@ -569,9 +569,6 @@
 			
 			$(document).ready(function(){
 
-				// Include Logo Animated
-				$('#logo-animated').load('images/logo-animated/Untitled-1.html');
-
 
 				// Contact Form Ajax
 				$('#contact-form').submit(function(event){
@@ -583,15 +580,12 @@
 						'message'	: 	$('textarea[name=message]').val()
 					};
 
-					// var formData = $('#contact-form').serialize();
-					// $('#contact-form :input').prop("disabled", false);
-					console.log(formData);
 					ajaxPOSTRequest({
 						url: 'ajax/ajax-contact.php',
 						data: formData,
 						success: function(response) {
-							// $('#contact-form :input').prop("disabled", false);
 							console.log(response);
+							alert('Sua mensagem foi enviada com sucesso.');
 						},
 						error: function(msg){
 							alert(msg);
@@ -602,34 +596,10 @@
 
 				});
 
-				// ANimate CSS delay
-
-				function animateCssDelay() {
-
-					setTimeout(function(){
-						$('.first-anim').show().addClass('animated');	
-					}, 1000);
-					
-
-					setTimeout(function() {
-						$('.second-anim').show().addClass('animated');
-					}, 2000);
-
-					setTimeout(function() {
-						$('.third-anim').show().addClass('animated');
-					}, 3000);
-				}
-
-				function animateImaginerLogo(){
-					$('#imaginer-animated-section').css({
-						"padding-top": "110px"
-					});
-
-					animateCssDelay();
-				}
-
-
-				animateImaginerLogo();
+				//Configure animated section on document ready
+				$('#imaginer-animated-section').css({
+					"padding-top": "110px"
+				});
 
 			});
 

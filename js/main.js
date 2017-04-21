@@ -255,7 +255,7 @@ function init() {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(-8.1975633, -34.9263409),
         map: map,
-		icon: 'img/icons/map-marker.png',
+		icon: 'images/icons/map-marker.png',
     });
 }
 
