@@ -23,7 +23,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 		
 		<!-- Icon Navegador-->
-		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="shortcut icon" href="images/favicon.ico"/>
 
 		<!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -42,6 +42,23 @@
 
 		<!-- Modernizer Script for old Browsers -->
         <script src="js/modernizr-2.6.2.min.js"></script>
+
+        <!--Adobe Edge Runtime-->
+	    <script type="text/javascript" charset="utf-8" src="http://animate.adobe.com/runtime/6.0.0/edge.6.0.0.min.js"></script>
+	    <style>
+	        .edgeLoad-EDGE-84293897 { visibility:hidden; }
+	    </style>
+		<script>
+		   AdobeEdge.loadComposition('elefanto-animation', 'EDGE-84293897', {
+		    scaleToFit: "none",
+		    centerStage: "none",
+		    minW: "0px",
+		    maxW: "undefined",
+		    width: "461px",
+		    height: "385px"
+		}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","461px","385px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","461px","385px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}});
+		</script>
+		<!--Adobe Edge Runtime End-->
 
     </head>
 	
@@ -72,7 +89,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<img src="img/slider/imaginer-animated/images/logo-imaginer-studios.gif" class="header-logo img-responsive">
+						<img src="images/slider/imaginer-animated/images/logo-imaginer-studios.gif" class="header-logo img-responsive">
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -98,17 +115,20 @@
 		<main class="site-content" role="main">
 
 		<section id="imaginer-animated-section">
-			<div class="top-anim">
-				<div id="title-1" style="padding-bottom:20px" class=" first-anim logo-title fadeInDown">
-				<p>Ideias que voam</p>
+			<div class="container">
+				<div class="row">
+					<div class="title text-center col-4 col-offset-3 first-anim fadeIn">
+						Ideias que voam
+					</div>
+					
 				</div>
-				<div class="second-anim fadeInRightBig">
-					<img id="logo-animated" src="img/elefanto.gif">
+				<div id="svg-animated" class="row">
+					<div id="Stage" class="col-4 col-offset-3 EDGE-84293897 second-anim fadeIn"></div>
+				</div>
+				<div class="title text-center col-4 col-offset-3 third-anim fadeIn">
+					com peso de um Elefante
 				</div>
 				
-				<div id="title-2" class="third-anim logo-title fadeInUp">
-					<p>com peso de um Elefante</p>
-				</div>
 			</div>
 			
 		</section>
@@ -250,36 +270,36 @@
 
 					<ul class="project-wrapper wow animated fadeInUp">
 						<li class="portfolio-item">
-							<img src="img/portfolio/5ft-c1.png" class="img-responsive" alt="O '5th Compendium' é um aplicativo lançado para Android que visa facilitar a consulta ás regras dos jogadores de RPG de mesa.">
+							<img src="images/portfolio/5ft-c1.png" class="img-responsive" alt="O '5th Compendium' é um aplicativo lançado para Android que visa facilitar a consulta ás regras dos jogadores de RPG de mesa.">
 							<figcaption class="mask">
 								<h3>5th Compendium App</h3>
 								<p></p>
 							</figcaption>
 							<ul class="external">
-								<li><a class="fancybox" title="5th Compendium App" data-fancybox-group="works" href="img/portfolio/5thcompendium-big.png"><i class="fa fa-search"></i></a></li>
+								<li><a class="fancybox" title="5th Compendium App" data-fancybox-group="works" href="images/portfolio/5thcompendium-big.png"><i class="fa fa-search"></i></a></li>
 								<li><a href=""><i class="fa fa-link"></i></a></li>
 							</ul>
 						</li>
 						
 						<li class="portfolio-item">
-							<img src="img/portfolio/cafe-com-bd.png" class="img-responsive" alt="O blog Café com Birosca foi totalmente reformulado e configurado para SEO. Tem um teor jornalístico com notícias e colunas sobre política, cultura e entretenimento no estado de Pernambuco.">
+							<img src="images/portfolio/cafe-com-bd.png" class="img-responsive" alt="O blog Café com Birosca foi totalmente reformulado e configurado para SEO. Tem um teor jornalístico com notícias e colunas sobre política, cultura e entretenimento no estado de Pernambuco.">
 							<figcaption class="mask">
 								<h3>Blog Café com Birosca</h3>
 								<p></p>
 							</figcaption>
 							<ul class="external">
-								<li><a class="fancybox" title="Blog Café com Birosca" href="img/portfolio/cafe-com-bd-big.png" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
+								<li><a class="fancybox" title="Blog Café com Birosca" href="images/portfolio/cafe-com-bd-big.png" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
 								<li><a href="http://www.cafecombirosca.com.br/"><i class="fa fa-link"></i></a></li>
 							</ul>
 						</li>
 						
 						<li class="portfolio-item">
-							<img src="img/portfolio/empoderagua.png" class="img-responsive" alt="Site educativo criado para centralizar conteúdos relevantes sobre a água de maneira lúdica e atrativa para alunos e professores.">
+							<img src="images/portfolio/empoderagua.png" class="img-responsive" alt="Site educativo criado para centralizar conteúdos relevantes sobre a água de maneira lúdica e atrativa para alunos e professores.">
 							<figcaption class="mask">
 								<h3>Site Empoderagua</h3>
 							</figcaption>
 							<ul class="external">
-								<li><a class="fancybox" title="Site Empoderagua" data-fancybox-group="works" href="img/portfolio/empoderagua-big.png"><i class="fa fa-search"></i></a></li>
+								<li><a class="fancybox" title="Site Empoderagua" data-fancybox-group="works" href="images/portfolio/empoderagua-big.png"><i class="fa fa-search"></i></a></li>
 								<li><a href="http://www.empoderagua.com.br"><i class="fa fa-link"></i></a></li>
 							</ul>
 						</li>
@@ -304,35 +324,35 @@
 						
 						<div id="testimonial" class=" wow animated fadeInUp">
 							<div class="testimonial-item text-center">
-								<img src="img/membros/lucas-arruda.jpg" alt="Our Clients">
+								<img src="images/membros/lucas-arruda.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>João Lucas </br>(Desenvolvedor Games/Web)</span>
 									<p>Lucas, vulgo Giga, é graduando em Sistemas de Informação pela UFRPE- PE. Seus fones de ouvidos são a porta de entrada para a Matrix, para começar a programar, basta ele coloca-los para conectar-se ao mundo virtal dos códigos.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
-								<img src="img/membros/nicolas.jpg" alt="Our Clients">
+								<img src="images/membros/nicolas.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>Nicollas Freitas </br>(CEO & Desenvolvedor Mobile)</span>
 									<p>Nicollas é graduando em Sistemas de Informação pela UFRPE- PE, e CEO da Imaginer. Como bom braço direito do chefe Imaginer, Nicollas busca extrair o melhor da equipe, até mesmo a primeira xícara de café da bandeja.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
-								<img src="img/membros/lucas-guilherme.jpg" alt="Our Clients">
+								<img src="images/membros/lucas-guilherme.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>Lucas Guilherme </br>(Web Designer & Audiovisual)</span>
 									<p>Lucas é formado em Computação Gráfica pela FG- PE e profissional em Audiovisual pelo CTCD- PE. Sua maior especialidade é deixar todo mundo pilhado com seu Café da Criatividade Universal.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
-								<img src="img/membros/tiago.jpg" alt="Our Clients">
+								<img src="images/membros/tiago.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>Tiago Aguiar </br>(Marketing Digital & Designer Gráfico)</span>
 									<p>Tiago é formado em Designer Gráfico pela IBratec- PE. Sua experiência com marketing e Designer só não é maior do que os seus dotes culinários, que utiliza para deixar toda a equipe bem alimentada para as atividades diárias.</p>
 								</div>
 							</div>
 							<div class="testimonial-item text-center">
-								<img src="img/membros/paulo.jpg" alt="Our Clients">
+								<img src="images/membros/paulo.jpg" alt="Our Clients">
 								<div class="clearfix">
 									<span>Paulo Henrique </br>(Ilustrador & Animador)</span>
 									<p>Paulo é formado em Computação Gráfica pela FG- PE e estudante de Game Design. Ilustrador nato, ele é o responsável por expor a criatividade da empresa, com sua caneta catalizadora de pensamentos criativos. E além de animar desenhos, ele também costuma animar com suas piadas durante os brainstorms.</p>
@@ -491,7 +511,7 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="footer-content">
-						<img id="logo-imaginer-albino" src="img/logo-imaginer-studios-branco.gif" alt="Our Clients">
+						<img id="logo-imaginer-albino" src="images/logo-imaginer-studios-branco.gif" alt="Our Clients">
 						<div id="assine-news" class="wow animated fadeInDown">
 							<p>assine nossa newsletter</p>
 						</div>
@@ -530,7 +550,7 @@
 		<!-- jquery.fancybox.pack -->
         <script src="js/jquery.fancybox.pack.js"></script>
 		<!-- Google Map API -->
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyDsDzvUytf8bOargvlM0ztgGn3lQH-6YPs"></script>
 		<!-- Owl Carousel -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- jquery easing -->
@@ -550,7 +570,7 @@
 			$(document).ready(function(){
 
 				// Include Logo Animated
-				$('#logo-animated').load('img/logo-animated/Untitled-1.html');
+				$('#logo-animated').load('images/logo-animated/Untitled-1.html');
 
 
 				// Contact Form Ajax

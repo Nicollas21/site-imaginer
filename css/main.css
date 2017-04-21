@@ -15,6 +15,13 @@
             ADDED STYLES
 */
 
+
+div.EDGE-84293897{
+    margin: 0 auto;
+    left: -2%;
+}
+
+
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #afafaf;
 }
@@ -24,20 +31,8 @@
     height: 600px;
 }
 
-#title-1 {
-    padding-left: 40%;
-}
-
-#title-2 {
-    padding-left:35%;
-    padding-top:20px;
-    padding-bottom:50px;
-}
-
-#logo-animated {
-    padding-left: 40%;
-    width:60%;
-
+.title {
+    font-size: 30px;
 }
 
 .first-anim, .second-anim, .third-anim {
@@ -61,25 +56,7 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
-    #imaginer-animated-section {
-        height: auto;
-    }
 
-    #title-1{
-        padding-left: 35%;
-    }
-
-    #title-2 {
-        padding-left: 25%;    
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar-brand {
-        width: 200px;
-    }
-}
 
 /*
 ==========================
@@ -615,7 +592,7 @@ h1.navbar-brand {
 /* Project laughtbox setup */
 
 .fancybox-item.fancybox-close {
-    background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent;
+    background: url("../images/icons/close.png") no-repeat scroll 0 0 transparent;
     height: 50px;
     right: 0;
     top: 0;
@@ -623,14 +600,14 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center #009ee3;
+    background: url("../images/right.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center #009ee3;
+    background: url("../images/left.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     left: 0;
@@ -856,7 +833,7 @@ ul.external li a:hover {
 
 
 #testimonials {
-    background-image: url(../img/parallax/desk.jpg);
+    background-image: url(../images/parallax/desk.jpg);
     padding: 0;
     color: #fff;
 }
@@ -890,7 +867,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:before {
-    background-image: url("../img/icons/quotes.png");
+    background-image: url("../images/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
@@ -900,7 +877,7 @@ ul.external li a:hover {
 }
 
 .testimonial-item > div:after {
-    background-image: url("../img/icons/quotes.png");
+    background-image: url("../images/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
     bottom: -50px;
@@ -1026,12 +1003,12 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(../images/slider/banner.jpg);
     padding: 0;
 }
 
 #social .overlay {
-    background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
+    background: url("../images/slide_bg.png") repeat scroll 0 0 transparent;
     padding: 100px 0 120px;
 }
 
